@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.imagesContainer {
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtersBar {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+select {
+    padding: 3px;
+}

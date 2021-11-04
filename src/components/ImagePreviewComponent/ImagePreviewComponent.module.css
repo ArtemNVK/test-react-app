@@ -1,0 +1,54 @@
+.root {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+    position: relative;
+    background-color: #e4e2e2;
+    border-radius: 5px;
+  }
+
+  .previewImg {
+    object-fit: contain;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+
+  .previewImg:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .icon {
+    display: none;
+    width: 15px;
+    height: 15px;
+    position: absolute; 
+    top: 5px;
+    left: 5px;
+    z-index: 1000;
+  }
+
+  .root:hover .icon {
+    display: block;
+  }
+
+  .icon:hover {
+      cursor: pointer;
+      opacity: 0.5;
+  }
+
+@media screen and (max-width: 540px) {
+  .imageModal {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .imageModal {
+    width: 200px;
+  }
+}
