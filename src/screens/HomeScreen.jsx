@@ -45,6 +45,7 @@ export default function HomeScreen() {
     console.log(imagesToDisplay);
     return (
         <>
+        {error && <p>Something went wrong</p>}
         {imagesToDisplay.length > 0 && (
         <div className={styles.root}>
             <div className={styles.imagesContainer}>
@@ -80,6 +81,7 @@ export default function HomeScreen() {
             </div>
         </div>
         )}
+        {loading && <p>Loading ...</p>}
         </>
     )
 }
